@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <form id="signupForm">
+      <h2>Sign Up</h2>
+
+      <div class="input-group">
+        <label id="fnameError" class="error"></label>
+        <input type="text" id="firstName" placeholder="First Name">
+      </div>
+
+      <div class="input-group">
+        <label id="mnameError" class="error"></label>
+        <input type="text" id="middleInitial" placeholder="Middle Initial" maxlength="1">
+      </div>
+
+      <div class="input-group">
+        <label id="lnameError" class="error"></label>
+        <input type="text" id="lastName" placeholder="Last Name">
+      </div>
+
+      <div class="input-group">
+        <label id="emailError" class="error"></label>
+        <input type="text" id="email" placeholder="Email Address">
+      </div>
+
+      <button type="button" class="submit-btn" onclick="validateForm()">Submit</button>
+      <button type="reset" class="reset-btn">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
